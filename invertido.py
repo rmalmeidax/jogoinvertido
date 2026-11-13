@@ -9,7 +9,7 @@ class Jogo:
 
 
     def players(self):
-        self.word = input("Type the word to start the game: ")
+        self.word = input("Type the word to start the game: ").upper()
         ##invert = word[::-1]
         qty_player = int(input("Enter the number of players: "))
 
@@ -21,12 +21,12 @@ class Jogo:
     def partida(self):
 
         while True:
-            partida = input("Player 01 - Digit the word: ")
+            partida = input("Player 01 - Digit the word: ").upper()
             if partida == self.word:
                 print("Player 01 Wins!!!!!")
                 break
 
-            partida = input("Player 02 - Digit the word: ")
+            partida = input("Player 02 - Digit the word: ").upper()
             if partida == self.word:
                 print("Player 02 wins !!!!!")
                 break
